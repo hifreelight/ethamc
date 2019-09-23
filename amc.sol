@@ -142,7 +142,7 @@ contract Pausable is Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and a
 // amc supply
 // ----------------------------------------------------------------------------
-contract AmcToken is ERC20Interface, Owned, Pausable {
+contract AmcToken is Pausable, ERC20Interface {
     using SafeMath for uint;
 
     string public symbol;
